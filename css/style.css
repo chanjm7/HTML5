@@ -31,6 +31,8 @@ body *, body *::before, body *::after{
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
+    /* min-height: 450px;
+    align-items: center; */
 }
 /* .main::after{
     content: "";
@@ -38,7 +40,7 @@ body *, body *::before, body *::after{
     clear: both;
 } */
 .group{
-    height: 60vh;
+    height: 10vh;
     /* margin: 0 15px; */
 }
 .group1{
