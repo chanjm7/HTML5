@@ -32,11 +32,11 @@ body *, body *::before, body *::after{
     justify-content: space-between;
     padding: 30px;
 }
-.main::after{
+/* .main::after{
     content: "";
     display: block;
     clear: both;
-}
+} */
 .group{
     height: 60vh;
     /* margin: 0 15px; */
