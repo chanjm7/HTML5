@@ -1,0 +1,80 @@
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+}
+body *{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header, .group, .slogan, .footer-content ,.visual, .main{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background-color: yellow;
+    position: relative;
+    padding: 0 30px;
+}
+.member{
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    padding: 5px 0;
+    position: relative;
+    right: -10px;
+}
+.member li{
+    display: inline-block;
+    /* display: inline-block; */
+    /* font-size: 1.2rem; */
+}
+.member a{
+    text-transform: uppercase;
+}
+.visual{
+    background-color: brown;
+    height: 10vh;
+}
+.main{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.group{
+    height: 60vh;
+}
+.group1{
+    background-color: darkmagenta;
+    width: 250px;
+}
+.group2{
+    background-color: aquamarine;
+    width: 380px;
+}
+.group3{
+    background-color: darksalmon;
+    width: 150px;
+}
+.slogan{
+    background-color: lightgreen;
+    height: 10vh;
+}
+
+.footer{
+    background-color: pink;
+    height: 10vh;
+}
+.footer-content{
+    background-color: indianred;
+    height: 10vh;
+}
