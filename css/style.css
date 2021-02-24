@@ -1,10 +1,32 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(./normalize.css);
+/* 숨김 컨텐츠 */
+.a11y-hidden{
+    background-color: burlywood;
+    /* display: none; 잘못된 방법*/
+    position: absolute;
+    /* top: -9999px; */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0 0 0 0);
+    clip-path: (0 0, 0 0, 0 0); /*점안보이게하기위해*/
+}
+/* 스타일 초기화 */
+.reset-list{ 
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
 html{
     font-size: 10px;
 }
 body{
-    margin: 0;
     background-color: #ccc;
     font-size: 1.2rem;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-weight: 300;
 }
 body *, body *::before, body *::after{
     box-sizing: border-box;
@@ -24,13 +46,13 @@ a{
     /* height: 10vh; */
     /* border-top: 1px solid transparent; */
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 50px;
 }  
 /* 로고 */
 .logo{
     margin: 0;
     position: absolute;
-    top: 45px;
+    top: 41px;
     left: 64px;
     font-size: 100%;
     line-height: 1;
@@ -64,6 +86,52 @@ a{
 }
 .divider{
     margin: 0 3px;
+}
+/* 메인메뉴 */
+.menu{
+    /* box-shadow: 0 -3px 0 0 lightslategray;  y축을 음수로 해야 올라온다 */
+    border-top:  3px solid lightslategray;
+    background: #7db9e8 linear-gradient(to bottom, #2ce84b 0%,#2ce84b 0%,#2ce84b 0%,#491059 0%,#491059 24%,#491059 37%,#2b146d 52%,#7db9e8 99%,#2ce84b 99%,#7db9e8 99%,#7db9e8 100%); 
+    border-radius: 0 0 5px 5px;  /*x축/ y축*/
+    height: 47px;
+    /* padding-left: 225px; */
+}
+.menu-item{
+    float: left;
+    border-left: 1px solid #fff;
+    line-height: 45px;
+}
+.menu-item-button{
+    display: block;
+    color:#fff;
+    padding: 2px 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+.menu-act .menu-item-button{
+    color: #ff0;
+    /* border-bottom:  2px solid #000; */
+}
+.menu-act .menu-item-button::after{
+    content: "";
+    display: block;
+    background-color: #000;
+    height: 2px;
+    margin-top: -2px;
+} 
+.menu-item:first-child{
+    margin-left: 225px;
+}
+.sub-menu{
+    background-color: pink;
+    position: absolute;
+    display: none;
+}
+.sub-menu1{
+    display: block;
+    top: 0;
+    left: 0;
 }
 .visual{
     background-color: salmon;
