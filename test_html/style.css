@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+body *, body *::before, body *::after{
+    box-sizing: border-box;
+}
+.header, .group, .slogan, .footer-content ,.visual, .main{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    background-color: yellow;
+    height: 10vh;
+}
+.visual{
+    background-color: brown;
+    height: 10vh;
+}
+.main{
+    background-color: blue;
+    /* overflow: hidden; */
+    padding: 40px 20px;
+}
+.main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.group{
+    height: 60vh;
+    margin: 0 20px;
+    float: left;
+}
+.group1{
+    background-color: darkmagenta;
+    /* float: left; */
+    width: 250px;
+}
+.group2{
+    background-color: aquamarine;
+    /* float: left; */
+    width: 380px;
+}
+.group3{
+    background-color: darksalmon;
+    /* float: left; */
+    width: 150px;
+}
+.slogan{
+    background-color: lightgreen;
+    height: 10vh;
+    clear: both;
+}
+.slogan::before{
+    content: "첫번째 자식요소";
+}
+.footer{
+    background-color: pink;
+    height: 10vh;
+    clear: both;
+}
+.footer-content{
+    background-color: indianred;
+    height: 10vh;
+}
