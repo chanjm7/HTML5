@@ -247,7 +247,6 @@ a{
 .main{
     background-color: #fff;
     border-radius: 15px 15px 0 0;
-
     /* height: 60vh; */
     /* border: 10px solid green; */
     /* overflow: hidden; */ 
@@ -269,8 +268,8 @@ a{
 } */
 /* .group{
     height: 60vh;
-    /* margin: 0 15px; */
-} */
+    margin: 0 15px;
+}*/
 .group1{
     /* background-color: violet; */
     /* float: left; */
