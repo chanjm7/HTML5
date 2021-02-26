@@ -442,7 +442,7 @@ a{
     margin: 0;
     padding: 0;
     border: 0;
-    display: flex;
+    
     
 }
 .search-form .flexbox{
@@ -467,6 +467,22 @@ a{
     height: 22px;
     font-size: 1.1rem;
 }
+/* 플렉스 박스 배치 */
+/* .group3{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+} */
+/* .group3::before{
+    content: "";
+}
+.group3 span{
+    border: 1px solid red;
+
+}
+.group3 span:nth-child(n+2){
+    margin-left: auto;
+} */
 /* 슬로건 */
 .slogan{
     background-color: lightgreen;
